@@ -20,8 +20,6 @@ class QA:
             for line in story_list:
                 self.story_ids.append(line.strip())
 
-            print(self.input_dir)
-            print(self.story_ids)
 
     def parse_stories(self):
         for story_id in self.story_ids:
@@ -37,7 +35,16 @@ class QA:
         pass
 
     def answer_questions(self):
+        # return: a dict of question_id to answer
+        # side effect: print out the answers in the format of
+        #     QuestionID: <question_id>
+        #     Answer: <answer>
+
+
         pass
+
+
+
 
 
 if __name__ == '__main__':
