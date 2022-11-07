@@ -2,6 +2,7 @@ from nltk import sent_tokenize, word_tokenize, pos_tag
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from rake_nltk import Rake
+from preprocess import PreProcess as pp
 
 
 class Story:
@@ -34,6 +35,12 @@ class Story:
         return Story(story_id, headline, date, text, text)
 
 
+class Sentence:
+    def __init__(self, text):
+        self.text = text
+        self.words = word_tokenize(text)
+
+
 class Question:
     def __init__(self, question_id, question, difficulty, answer):
         self.id = question_id
@@ -42,8 +49,8 @@ class Question:
         self.answer = answer
 
         self.keywords = self.extract_keywords(self.question)
-        self.tokenized_question = self.tokenize_question(self.question)
-        self.processed_question = self.process_question(self.tokenized_question)
+        self.tokenized_question = pp.word_tokenize(self.question)
+        self.processed_question = pp.lemmatize(pp.remove_stopwords(self.tokenized_question))
 
     def __str__(self):
         return f"QuestionID: {self.id}\n" \
@@ -82,42 +89,3 @@ class Question:
             questions.append(Question(question_id, answer, difficulty, None))
 
         return questions
-
-    @staticmethod
-    def tokenize_question(question):
-        """
-        Tokenize the question into a list of words.
-        Also removes punctuation and normalize the case.
-        :param question: the question string
-        :return: a list of tokens
-        """
-        # tokenize
-        q = word_tokenize(question)
-        # remove punctuation
-        q = [w for w in q if w.isalnum()]
-        # normalize
-        q = [w.lower() for w in q]
-        return q
-
-    @staticmethod
-    def process_question(question):
-        """
-        Process the question by removing stopwords and lemmatizing the words.
-        :param question: a list of tokens
-        :return: a list of processed tokens
-        """
-        # remove stop words
-        q = [w for w in question if w not in stopwords.words('english')]
-        # lemmatize
-        lemmatizer = WordNetLemmatizer()
-        q = [lemmatizer.lemmatize(w, 'n') for w in q]
-        q = [lemmatizer.lemmatize(w, 'v') for w in q]
-        q = [lemmatizer.lemmatize(w, 'a') for w in q]
-        q = [lemmatizer.lemmatize(w, 'r') for w in q]
-        q = [lemmatizer.lemmatize(w, 's') for w in q]
-        # lemmatize each POS separately?
-        # pos tag first then only lemmatize the words in that POS?
-        return q
-
-
-
