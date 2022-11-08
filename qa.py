@@ -1,10 +1,11 @@
 import sys
 from qa_evaluator import QAEvaluator
 from helpers import Question, Story
+from QAOptions import QAOptions
 
 
 class QA:
-    def __init__(self, input_file):
+    def __init__(self, input_file, options=QAOptions()):
         print("QA initialized")
         self.input_file = input_file
         self.input_dir = None
@@ -13,13 +14,13 @@ class QA:
         self.parse_input_file()
         self.parse_stories()
         self.parse_questions()
+        self.options = options
 
     def parse_input_file(self):
         with open(self.input_file, 'r') as story_list:
             self.input_dir = story_list.readline().strip()
             for line in story_list:
                 self.story_ids.append(line.strip())
-
 
     def parse_stories(self):
         for story_id in self.story_ids:
@@ -40,16 +41,37 @@ class QA:
         #     QuestionID: <question_id>
         #     Answer: <answer>
 
+        for story in self.stories.values():
+            story.answer_questions()
 
-        pass
+    def print_answers(self):
+        s = ''
+        for story in self.stories.values():
+            s += story.print_answers()
+        return s
 
-
-
+    def save_answers(self, filename):
+        with open(filename, 'w') as f:
+            f.write(self.print_answers())
 
 
 if __name__ == '__main__':
     input_file = sys.argv[1]
+    output_file = None
+    if len(sys.argv) > 2:
+        output_file = sys.argv[2]
+
+    answer_file = None
+    if len(sys.argv) > 3:
+        answer_file = sys.argv[3]
 
     QA = QA(input_file)
+    QA.answer_questions()
+    if output_file:
+        QA.save_answers(output_file)
+    else:
+        QA.print_answers()
 
-    evaluator = QAEvaluator()
+    if answer_file:
+        evaluator = QAEvaluator()
+        evaluator.evaluate(output_file, answer_file)

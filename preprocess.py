@@ -3,7 +3,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 
-class PreProcess:
+class Preprocess:
     @staticmethod
     def word_tokenize(text):
         """
