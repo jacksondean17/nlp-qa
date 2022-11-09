@@ -70,6 +70,7 @@ class Sentence:
         # replace newlines with spaces
         self.text = text.replace('\n', ' ').strip()
         self.words = pp.word_tokenize(text)
+        self.tagged_words = pp.pos_tag(self.words)
         self.processed_words = pp.lemmatize(pp.remove_stopwords(self.words))
 
     def score(self, keywords):
@@ -97,7 +98,11 @@ class Question:
 
         self.keywords = self.extract_keywords(self.question)
         self.tokenized_question = pp.word_tokenize(self.question)
+        self.tagged_question = pp.pos_tag(self.tokenized_question)
+        self.word_synonyms = pp.get_synonyms(pp.remove_stopwords(self.tagged_question))
+
         self.processed_question = pp.lemmatize(pp.remove_stopwords(self.tokenized_question))
+
 
         self.candidate_sentences = []
 

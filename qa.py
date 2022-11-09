@@ -6,7 +6,6 @@ from QAOptions import QAOptions
 
 class QA:
     def __init__(self, input_file, options=QAOptions()):
-        print("QA initialized")
         self.input_file = input_file
         self.input_dir = None
         self.story_ids = []
@@ -67,11 +66,13 @@ if __name__ == '__main__':
 
     QA = QA(input_file)
     QA.answer_questions()
+    # save to file if specified, otherwise print to stdout
     if output_file:
         QA.save_answers(output_file)
     else:
-        QA.print_answers()
+        print(QA.print_answers())
 
+    # evaluate if answer file is specified
     if answer_file:
         evaluator = QAEvaluator()
         evaluator.evaluate(output_file, answer_file)
