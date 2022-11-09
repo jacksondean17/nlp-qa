@@ -5,19 +5,20 @@ from QAOptions import QAOptions
 
 class Story:
     def __init__(self, story_id, headline, date, text, raw_text, options=None):
+        if options is None:
+            self.options = QAOptions()
+        else:
+            self.options = options
+
         self.story_id = story_id
         self.headline = headline
         self.date = date
         self.text = text
         self.sentences = pp.sentence_tokenize(text)
-        self.processed_sentences = [Sentence(s) for s in self.sentences]
+        self.processed_sentences = [Sentence(s, self.options) for s in self.sentences]
         self.questions = []
         self._raw_text = raw_text
 
-        if options is None:
-            self.options = QAOptions()
-        else:
-            self.options = options
 
     def __str__(self):
         return f"StoryID: {self.story_id}\n" \
@@ -38,7 +39,7 @@ class Story:
     def get_candidate_sentences(self, question):
         sentence_scores = {}
         for i, sentence in enumerate(self.processed_sentences):
-            sentence_scores[i] = sentence.score(question.processed_question)
+            sentence_scores[i] = sentence.score(question)
 
         sorted_scores = sorted(sentence_scores.items(), key=lambda x: x[1], reverse=True)
         return [self.processed_sentences[i] for i, score in sorted_scores[:self.options.num_candidate_sentences]]
@@ -66,23 +67,34 @@ class Story:
 
 
 class Sentence:
-    def __init__(self, text):
+    def __init__(self, text, options=None):
         # replace newlines with spaces
         self.text = text.replace('\n', ' ').strip()
         self.words = pp.word_tokenize(text)
         self.tagged_words = pp.pos_tag(self.words)
         self.processed_words = pp.lemmatize(pp.remove_stopwords(self.words))
+        if options is None:
+            self.options = QAOptions()
+        else:
+            self.options = options
 
-    def score(self, keywords):
+    def score(self, question):
         """
-        Score the sentence based on the number of matching keywords
-        :param keywords: a list of keywords
+        Score the sentence relative to the question
+        :param question: a Question object
         :return: the score of the sentence
         """
+        # join all question synonyms
+        sentence_synonyms = set()
+        for word, syns in question.word_synonyms:
+            sentence_synonyms.update(syns)
+
         score = 0
         for word in self.processed_words:
-            if word in keywords:
-                score += 1
+            if word in question.processed_question:
+                score += self.options.sentence_scoring_weights['keyword_exact_match']
+            elif word in sentence_synonyms:
+                score += self.options.sentence_scoring_weights['keyword_synonym_match']
         return score
 
     def __repr__(self):

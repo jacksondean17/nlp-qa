@@ -36,8 +36,10 @@ class Preprocess:
         """
         Remove stopwords from the text.
         :param text: a list of tokens OR a list of tagged tokens (word, tag)
-        :return: a list of tokens
+        :return: a list of tokens OR a list of tagged tokens (word, tag)
         """
+        if len(text) == 0:
+            return text
         if isinstance(text[0], tuple):
             # remove stopwords from a list of tagged tokens
             return [(w, t) for w, t in text if w not in stopwords.words('english')]
@@ -102,6 +104,20 @@ class Preprocess:
         return synonyms
         '''
 
+        '''
+        # If I just want synonyms for all senses and all POS
+        synonyms = []
+        for word, tag in tagged_words:
+            syns = wordnet.synsets(word)
+            word_syns = set()
+            for syn in syns:
+                word_syns.update([l.name() for l in syn.lemmas()])
+            word_syns.discard(word)
+            synonyms.append((word, word_syns))
+
+        return synonyms
+        '''
+
         # If I just want synonyms for all senses
         synonyms = []
         for word, tag in tagged_words:
@@ -122,6 +138,8 @@ class Preprocess:
             word_syns.discard(word)
             synonyms.append((word, word_syns))
         return synonyms
+
+
 
     @staticmethod
     def get_antonyms(word):
