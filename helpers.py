@@ -102,7 +102,7 @@ class Sentence:
 
 
 class Question:
-    def __init__(self, question_id, question, difficulty, answer):
+    def __init__(self, question_id, question, difficulty, answer, classifier=None):
         self.id = question_id
         self.question = question
         self.difficulty = difficulty
@@ -111,10 +111,14 @@ class Question:
         self.keywords = self.extract_keywords(self.question)
         self.tokenized_question = pp.word_tokenize(self.question)
         self.tagged_question = pp.pos_tag(self.tokenized_question)
-        self.word_synonyms = pp.get_synonyms(pp.remove_stopwords(self.tagged_question))
+        self.word_synonyms = pp.get_synonyms(pp.remove_stopwords(self.tagged_question, is_question=True))
 
-        self.processed_question = pp.lemmatize(pp.remove_stopwords(self.tokenized_question))
+        # self.processed_question = pp.lemmatize(pp.remove_stopwords(self.tokenized_question, is_question=True))
+        self.processed_question = pp.preprocess_question(self.question)
 
+        self.classifier = classifier
+        if classifier is not None:
+            self.classification = self.classifier.classify(self.processed_question)
 
         self.candidate_sentences = []
 
@@ -137,10 +141,11 @@ class Question:
         return r.get_ranked_phrases()  # maybe only return the top 5 or 10?
 
     @staticmethod
-    def parse_questions(text):
+    def parse_questions(text, classifier=None):
         """
         Parse the questions from the original *.questions file
         :param text: The text of the *.questions file
+        :param classifier: a QuestionClassifier object
         :return: A list of Question objects
         """
         question_text_blocks = text.split('\n\n')
@@ -150,8 +155,8 @@ class Question:
                 continue
             lines = block.splitlines()
             question_id = lines[0].split(': ')[-1].strip()
-            answer = lines[1].split(': ')[-1].strip()
+            question = lines[1].split(': ')[-1].strip()
             difficulty = lines[2].split(': ')[-1].strip()
-            questions.append(Question(question_id, answer, difficulty, None))
+            questions.append(Question(question_id, question, difficulty, None, classifier))
 
         return questions

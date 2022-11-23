@@ -2,6 +2,7 @@ import sys
 from qa_evaluator import QAEvaluator
 from helpers import Question, Story
 from QAOptions import QAOptions
+from question_classifier import QuestionClassifier
 
 
 class QA:
@@ -10,6 +11,7 @@ class QA:
         self.input_dir = None
         self.story_ids = []
         self.stories = {}
+        self.question_classifier = QuestionClassifier('./test-files/question_training.txt')
         self.parse_input_file()
         self.parse_stories()
         self.parse_questions()
@@ -31,7 +33,7 @@ class QA:
     def parse_questions(self):
         for story_id in self.story_ids:
             with open(self.input_dir + '/' + story_id + '.questions', 'r') as question_file:
-                self.stories[story_id].questions = Question.parse_questions(question_file.read())
+                self.stories[story_id].questions = Question.parse_questions(question_file.read(), classifier=self.question_classifier)
         pass
 
     def answer_questions(self):

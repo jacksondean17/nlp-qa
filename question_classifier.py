@@ -49,13 +49,16 @@ class QuestionClassifier:
 
     @staticmethod
     def preprocess_questions(questions):
-        processed_questions = [pp.word_tokenize(q) for q, l in questions]
-        processed_questions = [pp.remove_stopwords(q, is_question=True) for q in processed_questions]
-        processed_questions = [pp.lemmatize(q) for q in processed_questions]
+        processed_questions = [pp.preprocess_question(q) for q, l in questions]
+        # processed_questions = [pp.word_tokenize(q) for q, l in questions]
+        # processed_questions = [pp.remove_stopwords(q, is_question=True) for q in processed_questions]
+        # processed_questions = [pp.lemmatize(q) for q in processed_questions]
         return processed_questions
 
     def classify(self, question):
-        return self.classifier.predict(question)
+        x = self.vectorizer.transform([" ".join(question)])
+        y = self.classifier.predict(x)
+        return self.label_encoder.inverse_transform(y)
 
     @staticmethod
     def parse_question_file(file):
@@ -76,7 +79,7 @@ class QuestionClassifier:
 
 
 if __name__ == "__main__":
-    qc = QuestionClassifier("./test-files/all_qs.txt")
+    qc = QuestionClassifier("./test-files/question_training.txt")
     qc.evaluate()
 
     # print the results

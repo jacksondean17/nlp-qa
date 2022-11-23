@@ -145,6 +145,21 @@ class Preprocess:
             synonyms.append((word, word_syns))
         return synonyms
 
+    @staticmethod
+    def preprocess_question(question):
+        """
+        Preprocess the question.
+        :param question: the question string
+        :return: the tokenized, lemmatized, and stopword-removed question
+        """
+        # tokenize
+        tokens = Preprocess.word_tokenize(question)
+        # remove stopwords
+        tokens = Preprocess.remove_stopwords(tokens, is_question=True)
+        # lemmatize
+        tokens = Preprocess.lemmatize(tokens)
+        return tokens
+
 
 
     @staticmethod
