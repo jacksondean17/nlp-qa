@@ -32,20 +32,26 @@ class Preprocess:
         return sent_tokenize(text)
 
     @staticmethod
-    def remove_stopwords(text):
+    def remove_stopwords(text, is_question=False):
         """
         Remove stopwords from the text.
         :param text: a list of tokens OR a list of tagged tokens (word, tag)
         :return: a list of tokens OR a list of tagged tokens (word, tag)
         """
+        if is_question:
+            # keep the question words
+            stop_words = set(stopwords.words('english')) - {'what', 'when', 'where', 'why', 'how', 'which', 'who'}
+        else:
+            stop_words = set(stopwords.words('english'))
+
         if len(text) == 0:
             return text
         if isinstance(text[0], tuple):
             # remove stopwords from a list of tagged tokens
-            return [(w, t) for w, t in text if w not in stopwords.words('english')]
+            return [(w, t) for w, t in text if w not in stop_words]
         else:
             # remove stopwords from a list of tokens
-            return [w for w in text if w not in stopwords.words('english')]
+            return [w for w in text if w not in stop_words]
 
     @staticmethod
     def lemmatize(text):

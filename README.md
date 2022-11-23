@@ -42,6 +42,7 @@ The following nltk datasets are required to be downloaded before running.
 * stopwords
 * wordnet
 * omw-1.4
+* averaged_perceptron_tagger
 
 (not sure if I need this yet)
 * maxent_ne_chunker

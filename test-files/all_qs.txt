@@ -1,0 +1,2557 @@
+CLASS OPTIONS:
+ABBR. DES, ENT, HUM, LOC, NUM
+
+QuestionID: 1999-W02-5-1
+Question: Where is South Queens Junior High School located?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W02-5-2
+Question: Who is the principal of South Queens Junior High School?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W02-5-3
+Question: What has South Queens Junior High School done with its old metal shop?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W02-5-5
+Question: Who runs the club?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W02-5-6
+Question: How big is the club?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W02-5-7
+Question: If you were a student, how much would a club membership cost you?
+Class: NUM.money
+Difficulty: Moderate 
+
+QuestionID: 1999-W03-5-2
+Question: What team did Babe play for?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W03-5-3
+Question: What position did Babe play?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W03-5-4
+Question: How tall was Babe?
+Class: NUM.distance
+Difficulty: Easy
+
+QuestionID: 1999-W03-5-5
+Question: How much was Babe paid to play basketball?
+Class: NUM.money
+Difficulty: Moderate
+
+QuestionID: 1999-W03-5-6
+Question: How many games did the Edmonton Grads win?
+Class: NUM.quantity
+Difficulty: Easy
+
+QuestionID: 1999-W03-5-7
+Question: When did Babe play for "the finest basketball team that ever stepped out on a floor"?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W03-5-8
+Question: Why did Babe stop playing basketball?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W03-5-9
+Question: Who was Babe's husband?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W03-5-10
+Question: Where did Babe's daughter find scrapbooks?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W04-5-2
+Question: How much does Alexi Yashin earn as a hockey player?
+Class: NUM.money
+Difficulty: Easy
+
+QuestionID: 1999-W04-5-3
+Question: Who does Alexi Yashin play for?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W04-5-4
+Question: How much money did Alexi Yashin actually donate to the National Arts Centre?
+Class: NUM.money
+Difficulty: Moderate
+
+QuestionID: 1999-W04-5-7
+Question: Why do people go to the National Arts Centre?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W04-5-8
+Question: How would Alexi's parents have benefited from his donation to the National Arts Centre?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W04-5-9
+Question: Where did reporters question Alexi Yashin?
+Class: LOC.city
+Difficulty: Easy
+
+QuestionID: 1999-W06-2-1
+Question: Who is Wiarton Willie?
+Class: HUM.description
+Difficulty: Easy
+
+QuestionID: 1999-W06-2-2
+Question: What happened to him two days before Groundhog day?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W06-2-3
+Question: Who took care of Willie?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W06-2-4
+Question: How old was Willie when he died?
+Class: NUM.age
+Difficulty: Easy
+
+QuestionID: 1999-W06-2-5
+Question: When will he be buried?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W06-2-6
+Question: Where did Willie live?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W06-2-8
+Question: Who claims to have received a message from Willie's spirit?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W06-3-1
+Question: Who plans to institute a common code of conduct for students?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W06-3-2
+Question: How many students would the code affect?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W06-3-3
+Question: Under the code, what could happen to a student who swears at a teacher?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W06-3-4
+Question: When is one time that schools will phone parents of students?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W06-3-5
+Question: According to Johnson, how might a student's sloppy clothing affect them?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W06-4-1
+Question: How long has it been since Westerners crossed the world's largest sand desert?
+Class: NUM.period
+Difficulty: Easy
+
+QuestionID: 1999-W06-4-2
+Question: Who are the nomadic natives of Oman?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W06-4-3
+Question: What three countries will the Canadians cross through on their desert trek?
+Class: LOC.country
+Difficulty: Moderate
+
+QuestionID: 1999-W06-4-4
+Question: What is "Arabian Sands" about?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W06-4-6
+Question: What advice did Mr. Thesiger give to the Canadians?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W06-4-8
+Question: At what point did the group have to return to replace broken camel saddles?
+Class: NUM.distance
+Difficulty: Moderate
+
+QuestionID: 1999-W06-4-9
+Question: What type of clothing are the Canadians wearing on their journey across the desert?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W06-4-10
+Question: When did Clarke climb Mount Everest?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W06-4-11
+Question: Where will the trio's journey end?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W07-2-1
+Question: Where is Todd McFarlane originally from?
+Class: LOC.country
+Difficulty: Moderate
+
+QuestionID: 1999-W07-2-2
+Question: How old is Todd McFarlane?
+Class: NUM.age
+Difficulty: Easy
+
+QuestionID: 1999-W07-2-3
+Question: When did Todd McFarlane buy Mark McGwire's 70th home run ball?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W07-2-5
+Question: How many historic baseballs does McFarlane now own?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W07-2-6
+Question: What does McFarlane want in return for making the "McFarlane Collection" available to places like the National Baseball Hall of Fame?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W07-2-7
+Question: Whose ball did McFarlane buy for about $250,000 Canadian dollars?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W07-2-9
+Question: How often is there a Toy Fair in New York?
+Class: NUM.period
+Difficulty: Easy
+
+QuestionID: 1999-W07-4-1
+Question: What type of sports facility does Maple Leaf Gardens function as?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W07-4-2
+Question: When was the Maple Leaf Gardens built?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W07-4-3
+Question: Where is the Maple Leaf Gardens?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W07-4-4
+Question: How far did Brent Shuya and his son have to drive just to reach Winnipeg?
+Class: NUM.distance
+Difficulty: Easy
+
+QuestionID: 1999-W07-4-5
+Question: When did Foster Hewitt start broadcasting Maple Leaf games on the radio?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W07-4-7
+Question: Where did Tommy and Ruth sit for the Leaf's games at the Gardens?
+Class: LOC.other
+Difficulty: Moderate
+
+QuestionID: 1999-W07-4-8
+Question: Who was known as one of the toughest players in the NHL in the 1950s?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W08-3-1
+Question: What happened in Europe and England when Geoffrey was nine years old?
+Class: ENT.event
+Difficulty: Moderate
+
+QuestionID: 1999-W08-3-2
+Question: Where did Geoffrey Dewis live before he was nine?
+Class: LOC.country
+Difficulty: Moderate
+
+QuestionID: 1999-W08-3-3
+Question: How many British children were evacuated under the Commonwealth child evacuation program?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W08-3-6
+Question: Why did CBC produce "Canada Calling"?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W08-3-7
+Question: When did Geoffrey Dewis die?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W08-3-8
+Question: Who published Dewis's obituary?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W08-4-1
+Question: Who is Abdullah Ocalan?
+Class: HUM.description
+Difficulty: Easy
+
+QuestionID: 1999-W08-4-2
+Question: What do the Kurdish separatists want?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W08-4-3
+Question: Why did Kurds all over the world hold violent demonstrations?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W08-4-4
+Question: How did an Ottawa police officer get burned?
+Class: DES.description
+Difficulty: Modrate
+
+QuestionID: 1999-W08-4-5
+Question: What triggered some Kurds to try to occupy the Israeli consulate in Berlin?
+Class: ENT.event
+Difficulty: Moderate
+
+QuestionID: 1999-W08-4-6
+Question: How many protesters were injured at the Israeli consulate in Berlin?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W08-4-7
+Question: What did Chancellor Schroeder tell the Kurds in Germany?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W08-4-8
+Question: When did Ocalan start living outside of Turkey?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W08-4-10
+Question: Why has Turkey sent soldiers into Northern Iraq?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W09-3-1
+Question: How many McDonald's restaurants are there in North America?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W09-3-3
+Question: Where is the only unionized McDonald's in North America?
+Class: LOC.city
+Difficulty: Easy
+
+QuestionID: 1999-W09-3-5
+Question: When was the McDonald's unionized?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W09-3-6
+Question: What happened when the Teamsters tried to unionize a McDonald's in Montreal?
+Class: ENT.event
+Difficulty: Easy
+
+QuestionID: 1999-W09-3-7
+Question: According to their Quebec office, how did McDonald's feel about the vote to unionize the Montreal franchise?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W09-3-8
+Question: Why did the St-Hubert McDonald's not get unionized?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-1
+Question: Who was the master of ceremonies for this year's Grammy Awards?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-2
+Question: What type of music does Lauryn Hill make?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-3
+Question: How many children does Lauryn Hill have?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-4
+Question: Why did Jay-Z not attend the Grammy Awards?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-5
+Question: Where is Alanis Morissette from?
+Class: LOC.country
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-6
+Question: What movie was the song "My Heart Will Go On" in?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-7
+Question: Who wrote "My Heart Will Go On"?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W09-4-8
+Question: When did Madonna enter the music business?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W09-4-9
+Question: Who is Will Smith's wife?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W09-4-10
+Question: What other form of show business does Will Smith participate in besides music?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W10-1-1
+Question: Who owns Youth News Network?
+Class: HUM.group
+Difficulty: moderate
+
+QuestionID: 1999-W10-1-2
+Question: What did it cost Meadowvale secondary to have a satellite dish, televisions, and audio-visual equipment installed?
+Class: NUM.money
+Difficulty: moderate 
+
+QuestionID: 1999-W10-1-3
+Question: How many students attend Meadowvale secondary school?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W10-1-4
+Question: When is the deadline by which the school must decide whether to sign a five-year contract with YNN?
+Class: NUM.date
+Difficulty: easy 
+
+QuestionID: 1999-W10-1-6
+Question: What does CBC Newsworld provide to schools?
+Class: ENT.other
+Difficulty: moderate
+
+QuestionID: 1999-W10-1-7
+Question: Who is the principal of Meadowvale secondary?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W10-1-10
+Question: How long is YNN's newscast?
+Class: NUM.period
+Difficulty: easy
+
+QuestionID: 1999-W10-1-11
+Question: What organization does Heather-Jane Robertson represent?
+Class: HUM.group
+Difficulty: easy
+
+QuestionID: 1999-W10-2-2
+Question: When was the international landmine treaty agreed to by 130 countries?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W10-2-3
+Question: Which countries refused to sign the international accord on landmines?
+Class: LOC.country
+Difficulty: Moderate
+
+QuestionID: 1999-W10-2-4
+Question: What do we call groups of people who are experts at ringing bells?
+Class: ENT.term
+Difficulty: Easy
+
+QuestionID: 1999-W10-2-5
+Question: How long have North Korea and South Korea been in conflict?
+Class: NUM.period
+Difficulty: Easy
+
+QuestionID: 1999-W10-2-6
+Question: What is the name of the Portuguese anti-landmine film?
+Class: ENT.other
+Difficulty: Easy
+
+QuestionID: 1999-W10-2-7
+Question: Who is the Secretary General of the United Nations?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W10-2-9
+Question: Where is Brasilia?
+Class: LOC.country
+Difficulty: Easy
+
+QuestionID: 1999-W10-3-1
+Question: Why will Wang Shui-Bo be attending the Oscars this year?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W10-3-2
+Question: What is the name of Wang's documentary?
+Class: ENT.other
+Difficulty: Easy
+
+QuestionID: 1999-W10-3-4
+Question: Who fired on the student demonstrators in Tiananmen Square?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W10-3-5
+Question: When did Wang leave China?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W10-3-6
+Question: Where does Wang live now?
+Class: LOC.city
+Difficulty: Easy
+
+QuestionID: 1999-W10-3-7
+Question: Who doesn't need another revolution, according to Wang?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W10-4-1
+Question: What is the scientific name for marijuana?
+Class: ENT.term
+Difficulty: Moderate
+
+QuestionID: 1999-W10-4-2
+Question: What is the Health Department's study going to examine about marijuana?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W10-4-3
+Question: Who has the Canadian Health Department consulted with about obtaining marijuana?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W10-4-4
+Question: Why was Mark Crossley sentenced to house arrest?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W10-4-5
+Question: Where has marijuana already been approved for medical use?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W10-4-6
+Question: How long does it take for delta-9 tetrahydrocannabinol to be absorbed into the bloodstream when someone smokes marijuana?
+Class: NUM.period
+Difficulty: Moderate
+
+QuestionID: 1999-W10-5-1
+Question: Who authored a study on the differences between the rich and poor in Canada?
+Class: HUM.individual
+Difficulty: moderate
+
+QuestionID: 1999-W10-5-3
+Question: How is Alberta's economy doing?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W10-5-5
+Question: Where in Alberta, Canada is the difference between rich and poor most noticible?
+Class: LOC.city
+Difficulty: moderate
+
+QuestionID: 1999-W10-5-6
+Question: Why does Calgary have many high-paying managment jobs?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W10-5-7
+Question: When did Ms. Yalnizyan give a speech?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W11-2-1
+Question: Where did the issue of chemical pollutants in the Arctic come to a head recently?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W11-2-2
+Question: Why is eating Arctic fish and game a frightening and tricky business?
+Class: DES.reason
+Difficulty: easy
+
+QuestionID: 1999-W11-2-3
+Question: When did the issue of chemical contaminants in Arctic food come to a head?
+Class: NUM.date
+Difficulty: moderate
+
+QuestionID: 1999-W11-2-4
+Question: Who does Carole Mills represent?
+Class: HUM.group
+Difficulty: easy
+
+QuestionID: 1999-W11-2-5
+Question: How does Mills convince her family members to eat fish?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W11-2-6
+Question: What are POPs?
+Class: DES.definition
+Difficulty: easy
+
+QuestionID: 1999-W11-2-8
+Question: What is muktuk?
+Class: DES.definition
+Difficulty: easy
+
+QuestionID: 1999-W11-2-9
+Question: Who is Eric Loring?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W11-2-10
+Question: Why does Carole Mills think it is more of a health risk not to eat country food than to eat it?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W11-3-1
+Question: How does Newfoundland intend to use a film of seals feasting on cod?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W11-3-4
+Question: Why has there been a moratorium on cod fishing?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W11-3-5
+Question: When was the moratorium instituted?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W11-3-6
+Question: What is the estimated size of the seal herd?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W11-3-7
+Question: By how much does John Efford want to cut the seal herd?
+Class: NUM.count
+Difficulty: moderate
+
+QuestionID: 1999-W11-3-8
+Question: Where is Dalhousie University?
+Class: LOC.city
+Difficulty: moderate
+
+QuestionID: 1999-W11-3-10
+Question: How much was sealing worth to the Newfoundland economy in 1996?
+Class: NUM.money
+Difficulty: easy
+
+QuestionID: 1999-W11-5-1
+Question: What is Bill 101?
+Class: DES.definition
+Difficulty: easy
+
+QuestionID: 1999-W11-5-2
+Question: What does Bill 101 require?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W11-5-4
+Question: Who described Dr. Laurin as "a pioneer, a builder, a man of conviction, determined"?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W11-5-5
+Question: When did Bill 101 come into effect?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W11-5-6
+Question: How does the president of the Alliance Quebec English-rights lobby describe Laurin's masterwork, Bill 101?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W11-5-8
+Question: How do Quebec nationalists credit Bill 101?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W12-3-1
+Question: Who said Bedouin ways are "a death in life."?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W12-3-2
+Question: How long did it take Jamie Clarke and his companions to travel 1,200 kilometers across the Arabian desert?
+Class: NUM.period
+Difficulty: Moderate
+
+QuestionID: 1999-W12-3-4
+Question: What was one of the things that motivated Clarke during the journey?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W12-3-6
+Question: Where did the team's journey begin?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W12-3-8
+Question: When did Clarke dream about the desert?
+Class: ENT.event
+Difficulty: Moderate
+
+QuestionID: 1999-W12-3-10
+Question: How do camels like to be spoken to?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W12-4-1
+Question: What kind of treatments do the doctors want to give thirteen-year-old Tyrell Dueck for his cancer?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W12-4-3
+Question: Where was the court where the trial took place?
+Class: LOC.city
+Difficulty: Easy
+
+QuestionID: 1999-W12-4-4
+Question: Where does Tyrell's father want him to go?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W12-4-5
+Question: How would Tyrell prefer to treat his medical condition?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W12-4-6
+Question: Who does the boy need to speak to without his parents present, according to lawyers in the case?
+Class: HUM.description
+Difficulty: Moderate
+
+QuestionID: 1999-W12-4-7
+Question: When will Tyrell likely die if he doesn't receive proper treatment?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W12-5-2
+Question: Who won Monday night's game?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W12-5-3
+Question: When did hockey fans bring hand drums to a game to taunt the Native players?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W12-5-4
+Question: Why do First Nations people allegedly "hate white people," according to some?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W12-5-5
+Question: What is Rod Bushie's role in the Assembly of Manitoba Chiefs?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W12-5-6
+Question: How should politicians respond to racism, according to Bushie?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W12-5-7
+Question: According to Bushie, what should the schools do to combat racism?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W12-5-8
+Question: Where have the First Nation leaders been invited?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W13-1-1
+Question: Why did Judge A. R. Rothery not allow Tyrell Dueck to refuse cancer treatment?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W13-1-3
+Question: How would doctors have conventionally treated Tyrell's cancer?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W13-1-4
+Question: What did doctors discover when Tyrell returned to them for treatment?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W13-1-5
+Question: When did Tyrell discover the lump in his leg?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W13-1-6
+Question: What is the name of the Duecks' lawyer?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W13-1-7
+Question: Where is Tyrell's home?
+Class: LOC.city
+Difficulty: easy
+
+QuestionID: 1999-W13-3-1
+Question: What do the nations of the North Atlantic Treaty Organization want to stop the Yugoslavians from doing?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W13-3-2
+Question: What are the ethnic Albanians in Kosovo pushing for?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W13-3-3
+Question: How old are the roots of the conflict between Kosovo and Serbia?
+Class: NUM.age
+Difficulty: moderate
+
+QuestionID: 1999-W13-3-4
+Question: When did the Serbs lose a key battle against the forces of the invading Ottoman Empire in Kosovo?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W13-3-5
+Question: Where is the capital of Kosovo?
+Class: LOC.city
+Difficulty: easy
+
+QuestionID: 1999-W13-3-6
+Question: Who is Slobodan Milosevic?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W13-3-7
+Question: How has Milosevic described the problems in Kosovo?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W13-3-9
+Question: What does Milosevic refuse to do?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W13-3-10
+Question: What do Yugoslav officials feel they can do in a war against NATO?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W13-3-11
+Question: How many Canadian Forces personnel are based in Aviano, Italy?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W13-5-1
+Question: Where are the Canadian fighter bombers based?
+Class: LOC.country
+Difficulty: moderate
+
+QuestionID: 1999-W13-5-2
+Question: What is the goal of the NATO bombing in Yugoslavia?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W13-5-4
+Question: How many of the targets they were given did the Canadian fighter bombers hit?
+Class: NUM.count
+Difficulty: moderate
+
+QuestionID: 1999-W13-5-5
+Question: Why did one pilot not launch his weapons?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W13-5-6
+Question: Who has been protesting the bombing in Yugoslavia?
+Class: HUM.group
+Difficulty: easy
+
+QuestionID: 1999-W13-5-7
+Question: When is a demonstration planned for the front of the House of Commons?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W13-5-9
+Question: Who is Art Eggleton?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W14-1-2
+Question: How does the virus trick people into thinking they've received an e-mail from a person they know?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W14-1-4
+Question: Why does the virus have the potential to clog e-mail servers?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W14-1-5
+Question: What three companies have had files affected by the virus?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W14-1-6
+Question: Who has a Computer Emergency Response Team?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W14-1-7
+Question: Who is Ms. Fithen?
+Class: HUM.description
+Difficulty: Moderate
+
+QuestionID: 1999-W14-1-8
+Question: When did Carnagie Mellon learn of the virus?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W14-1-9
+Question: What do "patches" from antivirus software makers do?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W14-1-10
+Question: What can you do to protect yourself against "Melissa" and similar viruses?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-1
+Question: When did Newfoundland become a British colony?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-2
+Question: Who governed the early costal communities before civil governors replaced them?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-3
+Question: What factor divided the population of Newfoundland in the 1800s?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W14-3-5
+Question: What date was the vote that made Newfoundland part of Canada?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-6
+Question: How many people cast their votes for the "responsible government" in the final vote that made Newfoundland part of Canada?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-7
+Question: What were the pro-union Newfoundlanders called?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W14-3-8
+Question: According to Mr. Crosbie, why do Newfoundlanders enjoy a better quality of life as a province of Canada?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-9
+Question: Who was prime minister when John Crosbie was a minister?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W14-3-10
+Question: Where did Newfoundlanders recently re-create the vote that brought the province into Canada?
+Class: LOC.city
+Difficulty: Easy
+
+QuestionID: 1999-W14-5-1
+Question: Where is CNN opening up a new news bureau?
+Class: LOC.city
+Difficulty: Easy
+
+QuestionID: 1999-W14-5-3
+Question: Who will write stories for the new bureau?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W14-5-4
+Question: What did Ms. Finlay ask Mr. Corley?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W14-5-5
+Question: When does Ms. Finlay's radio program air?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W15-2-1
+Question: Where have 76 centimeters of snow fallen since yesterday?
+Class: LOC.city
+Difficulty: easy
+
+QuestionID: 1999-W15-2-2
+Question: When did Calgary, Alberta receive not a single snowflake?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W15-2-3
+Question: What did the Hollywood movie crew do to transform a Calgary street into a wintry scene for the movie "Snow Day"?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W15-2-5
+Question: Who is the star of "Snow Day"?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W15-2-7
+Question: In the movie "Snow Day," what are the kids in Syracuse trying to do?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W15-4-2
+Question: What did Hudon do in jail to protest his arrest?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W15-4-3
+Question: How did Hudon's relatives get him freed from jail?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W15-4-4
+Question: How did Pascal Hudon react when he was set free from jail, according to his mother?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W15-4-5
+Question: Who is Joaquin Garcia?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W15-4-6
+Question: How long has Mexico had laws to prevent looting of archeological sites?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W15-4-7
+Question: Where did Pascal Hudon claim he found the eight figurines?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W15-4-9
+Question: How many Mexican historical sites are monitored constantly?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W15-4-10
+Question: Where does Pascal Hudon intend to visit next?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W15-5-2
+Question: When were the 170 children of the Sons of Freedom sect of the Doukhobor faith locked up in internment camp?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W15-5-3
+Question: Where was the internment camp for the children located?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W15-5-5
+Question: What did ombudsman Dulcie McCallum's investigation into the treatment of the Doukhobor children find?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W15-5-6
+Question: What did the government force the children to build while they were interned in the camp?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W15-5-7
+Question: How often were the interned children allowed to visit with their parents?
+Class: NUM.date
+Difficulty: moderate
+
+QuestionID: 1999-W15-5-8
+Question: Who is Ujjal Dosanjn?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W15-5-9
+Question: How have provincial officials responded to the ombudsman's report?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W16-3-2
+Question: How many cases of measles were there in 1995 in Canada?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W16-3-3
+Question: When did Canadian children begin to receive anti-measles vaccinations?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W16-3-6
+Question: What is Rubella?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W16-3-7
+Question: Why do some parents not get their children vaccinated?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W16-3-8
+Question: Who tried to prevent Grade Four Students from being immunized against Hepatitis B?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W16-3-9
+Question: Where does Donald Henderson work?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W16-4-2
+Question: Who was who was chanting "Shame on China" on Wednesday?
+Class: HUM.group
+Difficulty: Easy
+
+QuestionID: 1999-W16-4-5
+Question: Who is the mayor of Saint John's?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W16-4-6
+Question: How long will the premier of China be in Canada?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W16-4-7
+Question: Where was Zhu before he came to Canada?
+Class: LOC.country
+Difficulty: Moderate
+
+QuestionID: 1999-W16-4-8
+Question: How did Zhu respond to questions about a prominent dissident?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W16-4-9
+Question: Where did Premier Zhu go after meeting with Newfoundland's Premier Brian Tobin?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W16-4-10
+Question: What does the white cowboy hat symbolize in Calgary?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W16-5-1
+Question: Where is the Fraser River?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W16-5-2
+Question: What are the fertile soils of the Fraser River good for?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W16-5-3
+Question: How large is the Fraser River watershed?
+Class: NUM.size
+Difficulty: Easy
+
+QuestionID: 1999-W16-5-5
+Question: When will the river probably reach its highest level this year?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W16-5-7
+Question: How deep were the flood waters in 1948?
+Class: NUM.distance
+Difficulty: Moderate
+
+QuestionID: 1999-W16-5-8
+Question: How many people died in the 1948 flood?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W16-5-9
+Question: Who is the Environment Ministry spokesman quoted in this story?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W17-1-1
+Question: How long did Gretzky dominate the sport of hockey?
+Class: NUM.period
+Difficulty: easy
+
+QuestionID: 1999-W17-1-2
+Question: Who won the last game Gretzky played?
+Class: HUM.group
+Difficulty: moderate
+
+QuestionID: 1999-W17-1-3
+Question: Where did Gretzky play his last hockey game?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W17-1-4
+Question: Why will the number 99 never be worn again by a professional hockey player?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W17-1-5
+Question: When did Gretzky's parents tell him they were proud of him?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W17-1-7
+Question: Why did Gretzky say he was "devastated"??
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W17-1-8
+Question: How will Wayne Gretzky be competing again?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W17-1-9
+Question: What did Gretzky do when he saw a youngster's hand extended from the crowd?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W17-1-10
+Question: Who played with Gretzky on the Edmonton Oilers?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W17-3-1
+Question: How many students were killed in the Columbine High School shootings?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W17-3-2
+Question: How long might bomb squads need to complete searching the school for explosives, according to the Jefferson County Sheriff's Department?
+Class: NUM.period
+Difficulty: easy
+
+QuestionID: 1999-W17-3-3
+Question: What did the two students who did the shootings do as they moved through the school?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W17-3-4
+Question: Who described the shootings as a "suicide mission"?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W17-3-5
+Question: Where is Columbine High School located?
+Class: LOC.city
+Difficulty: easy
+
+QuestionID: 1999-W17-3-6
+Question: When did Columbine High School open?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W17-3-7
+Question: Why did American President Bill Clinton go on television?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W17-3-8
+Question: What did President Clinton say is the challenge facing America?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W17-3-10
+Question: Who did students describe as a hero?
+Class: HUM.individual
+Difficulty: moderate
+
+QuestionID: 1999-W17-3-11
+Question: What would the bill sponsored by Representative Doug Dean do for gun owners?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W17-5-1
+Question: How many parents from Calgary protested against a teachers' strike?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W17-5-2
+Question: Where did the parents protest?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W17-5-3
+Question: What is the biggest stumbling block in the dispute between the teachers and the school board?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W17-5-4
+Question: Who is Teresa Woo-Paw?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W17-5-6
+Question: When are teachers poised to strike?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W17-5-7
+Question: What will a teachers' strike force parents to do?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W17-5-8
+Question: What effect will the present school board plans have on teachers?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W17-5-9
+Question: What happens to Grade 12 diploma exams if teachers strike?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W17-5-10
+Question: Who is urging the teachers and school board to keep talking?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W18-3-1
+Question: When was a sheep cloned by Scottish scientists?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W18-3-2
+Question: What type of animal did Nexia Biotechnologies clone?
+Class: ENT.animal
+Difficulty: Easy
+
+QuestionID: 1999-W18-3-3
+Question: How many clones did Nexia Biotechnologies make?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W18-3-4
+Question: Who is the president of Nexia Biotechnologies?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W18-3-7
+Question: Besides being very strong, what are the advantages of BioSteel?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W18-4-1
+Question: What is the population of Taber?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W18-4-2
+Question: Who shot two students at a high school in Taber?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W18-4-4
+Question: Where is the Taber gunman now?
+Class: LOC.other
+Difficulty: Moderate
+
+QuestionID: 1999-W18-4-5
+Question: Who died in the Taber shooting?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W18-4-7
+Question: Why were yesterday evening's activities at Taber Evangelical Free Church modified?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W18-4-8
+Question: When was there a school shooting in Colorado?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W18-5-1
+Question: When did Qemal Sefa's family flee Kosovo?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W18-5-3
+Question: How did Sefa's family reach the Albanian border?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W18-5-4
+Question: How far did Sefa's family live from the Albanian border?
+Class: NUM.distance
+Difficulty: Easy
+
+QuestionID: 1999-W18-5-6
+Question: Where did Qemal Sefa use to work?
+Class: LOC.other
+Difficulty: Moderate
+
+QuestionID: 1999-W18-5-7
+Question: How old is Qemal Sefa?
+Class: NUM.age
+Difficulty: Easy
+
+QuestionID: 1999-W18-5-9
+Question: What happened to the money and supplies Esat tried to send to his brother's family?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W18-5-10
+Question: What is the name of the UN organization responsible for refugees?
+Class: ENT.organization
+Difficulty: Moderate
+
+QuestionID: 1999-W19-1-1
+Question: How long have people inhabited the Yukon region, according to new research?
+Class: NUM.period
+Difficulty: easy
+
+QuestionID: 1999-W19-1-2
+Question: How did the first inhabitants of North America get here?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W19-1-4
+Question: Where is Eastern Beringia?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W19-1-5
+Question: Who says "there is no question that there were people in Eastern Beringia 40,000 years ago"?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W19-1-6
+Question: Where was the latest evidence supporting earlier dates for the first human inhabitants of North America found?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W19-1-7
+Question: What did archeologists find in the Bluefish Caves?
+Class: ENT.other
+Difficulty: moderate
+
+QuestionID: 1999-W19-1-8
+Question: Who does Jacques Cing-Mars think used the caves?
+Class: HUM.group
+Difficulty: easy
+
+QuestionID: 1999-W19-1-9
+Question: What does author Heather Pringle think archeology is about?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W19-2-1
+Question: Which U.S. states were hit by the numerous tornados?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W19-2-2
+Question: What is the recognizable shape of a tornado?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W19-2-3
+Question: Who said 40 people were killed in Oklahoma alone?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W19-2-4
+Question: When did authorities discover the initial count of 10 deaths in Sedgwick County was wrong?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W19-2-5
+Question: Where was Chad Harris when the tornado hit?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W19-2-6
+Question: What is the wind speed range of an F-4 tornado?
+Class: NUM.other
+Difficulty: easy
+
+QuestionID: 1999-W19-2-7
+Question: How many F-5 tornados hit the United States each year on average?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W19-2-8
+Question: Why is the scale of intensity for tornados called the Fujita scale?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W19-2-9
+Question: How do scientists rank tornados?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W19-4-1
+Question: Where in Nova Scotia did the plane carrying Kosovo refugees land?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W19-4-2
+Question: How will many of the Kosovo refugees spend their time in Canada?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W19-4-3
+Question: When did Shamsay Amoosa flee his homeland of Kosovo?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W19-4-4
+Question: Who was with Ahmet Konyoury on the plane to Canada?
+Class: HUM.individual
+Difficulty: moderate
+
+QuestionID: 1999-W19-4-8
+Question: How many countries worldwide does the United Nations Security Council represent?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W19-5-1
+Question: What is giving firefighters a hand in battling several large forest fires across Northern Ontario?
+Class: ENT.other
+Difficulty: easy
+
+QuestionID: 1999-W19-5-2
+Question: When might some people be allowed to return to their homes?
+Class: NUM.date
+Difficulty: moderate
+
+QuestionID: 1999-W19-5-3
+Question: Where has a state of emergency been declared?
+Class: LOC.city
+Difficulty: easy
+
+QuestionID: 1999-W19-5-4
+Question: Why could Manitoba send fire fighters and equipment to the latest hotspot in northwestern Ontario?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W19-5-5
+Question: Who is Natural Resources Minister?
+Class: HUM.individual
+Difficulty: moderate
+
+QuestionID: 1999-W19-5-6
+Question: How did Bob Thomas What describe forest conditions right now?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W19-5-7
+Question: How many forest fires have there been in Ontario since April 1?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W19-5-8
+Question: What has triggered most of the fires in Ontario that have occurred since April 1?
+Class: ENT.other
+Difficulty: moderate
+
+QuestionID: 1999-W20-5-1
+Question: How many Canadians have diabetes and don't realize it?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W20-5-2
+Question: What kinds of health problems do diabetics potentially face?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W20-5-3
+Question: How is diabetes currently controlled?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W20-5-4
+Question: What does insulin do for our bodies?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W20-5-5
+Question: What do Type 1 diabetics' immune systems do to insulin-producing cells?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W20-5-7
+Question: Where does Dr. Yoon's team work?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W20-5-8
+Question: Why will diabetics have to be patient, despite Dr. Ji-Won Yoon's discovery?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W20-5-9
+Question: Who is Holly McWilliams?
+Class: HUM.description
+Difficulty: Easy
+
+QuestionID: 1999-W21-3-1
+Question: When did Star Wars fans across Canada begin lining up for tickets to Star Wars: Episode 1 The Phantom Menace" movie?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W21-3-2
+Question: Why did someone sleep in a tent on a sidewalk in front of a theater in Montreal?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W21-3-3
+Question: How did Mark Churchill describe the movie, "The Phantom Menace"?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W21-3-4
+Question: Who said "the effects were top notch" when he was talking about "The Phantom Menace"?
+Class: HUM.individual
+Difficulty: moderate
+
+QuestionID: 1999-W21-3-6
+Question: How much money are some scalpers in Los Angeles asking for a Phantom Menace ticket?
+Class: NUM.money
+Difficulty: easy
+
+QuestionID: 1999-W21-3-8
+Question: Where have offers for tickets been common?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W21-3-9
+Question: What does Stephen Cole of the National Post say is missing in the Phantom Menace?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W21-5-1
+Question: Where is Gisborne Lake?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W21-5-2
+Question: Why does Gerry White want to build a pipeline from Gisborne Lake to Grand Lepierre?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W21-5-3
+Question: What do Ottawa and the provinces want to negotiate?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W21-5-4
+Question: Who is Maude Barlow?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W21-5-5
+Question: If the water export plan goes ahead, what is triggered?
+Class: ENT.other
+Difficulty: easy
+
+QuestionID: 1999-W21-5-6
+Question: What does Maude Barlow think American firms will do?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W21-5-7
+Question: When does Ottowa have to act if it wants to stop the pipeline plan?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W21-5-8
+Question: How has the pipeline project been proved safe, according to Gerry White?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W22-2-1
+Question: Where is Kosovo?
+Class: LOC.country
+Difficulty: Easy
+
+QuestionID: 1999-W22-2-4
+Question: When did the NATO bombing start?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W22-2-5
+Question: What will Thordis Gutnick do for the refugees?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W22-2-6
+Question: How many Kosovars are eligible for Canada's family reunification program?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W22-2-7
+Question: Why is the Kosovo leadership concerned about taking refugees so far from home?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W22-2-8
+Question: Who is the attorney general of British Columbia?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W22-3-1
+Question: Who was Owen Hart?
+Class: HUM.description
+Difficulty: Easy
+
+QuestionID: 1999-W22-3-2
+Question: How did Owen Hart die?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W22-3-3
+Question: Which one of Owen's siblings is a wrestler?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W22-3-5
+Question: What is the average age of people who watch TSN's professional wrestling shows?
+Class: NUM.age
+Difficulty: Moderate
+
+QuestionID: 1999-W22-3-7
+Question: When are the next summer Olympics going to be held?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W22-3-8
+Question: Where does Jesse Ventura serve as governor?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W22-4-1
+Question: How long has Julie Payette wanted to be an astronaut?
+Class: NUM.period
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-2
+Question: When she was in school, what would Julie do instead of going to recess?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-3
+Question: How many languages does Julie speak?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W22-4-4
+Question: When was Julie selected to be an astronaut by the Canadian Space Agency?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W22-4-7
+Question: Where will the space shuttle Discovery be taking Julie?
+Class: LOC.other
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-8
+Question: What will Julie use to document the mission progress?
+Class: ENT.other
+Difficulty: Easy
+
+QuestionID: 1999-W22-4-9
+Question: Who will be Julie work with to change solar batteries?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-11
+Question: Who is Aline Chretien married to?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-12
+Question: When was the International Space Station launched?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W22-5-3
+Question: How many people live in La Ronge?
+Class: NUM.count
+Difficulty: Moderate
+
+QuestionID: 1999-W22-5-4
+Question: Who is the mayor of La Ronge?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W22-5-5
+Question: Why did Gary Vettree's house not burn down?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W22-5-6
+Question: How high was the fire in the industrial area of town?
+Class: NUM.distance
+Difficulty: Easy
+
+QuestionID: 1999-W22-5-7
+Question: Where were the evacuees taken when the fire threatened their homes?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W22-5-8
+Question: When were the evacuees able to go back to their homes?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W23-1-1
+Question: Why didn't Canadian astronaut Julie Payette get time to put on her red clown nose and listen to the Sarah McLaughlan CD she brought along with her on her shuttle flight
+Class: DES.reason
+Difficulty: easy
+
+QuestionID: 1999-W23-1-2
+Question: Who led the way into the unfinished station?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W23-1-4
+Question: Where was the temperature in the space station only 14 degrees?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W23-1-5
+Question: What did Valery Tokarev and Julie Payette change inside the Russian-built Zarya control module?
+Class: ENT.other
+Difficulty: easy
+
+QuestionID: 1999-W23-1-6
+Question: How did the crew reduce the noise level from fans inside Zarya?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W23-1-7
+Question: What is the noise level in an office?
+Class: NUM.other
+Difficulty: easy
+
+QuestionID: 1999-W23-1-9
+Question: When are the first permanent residents due to arrive at the International Space Station?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W23-5-1
+Question: How did Ontario Premier Mike Harris describe his re-election campaign?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W23-5-2
+Question: What are ridings?
+Class: DES.definition
+Difficulty: easy
+
+QuestionID: 1999-W23-5-3
+Question: Why does a majority government make it much easier for the ruling party to make decisions?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W23-5-4
+Question: Who is the leader of the Liberals?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W23-5-5
+Question: When was the last time any party won two majority governments in a row in Ontario?
+Class: NUM.date
+Difficulty: moderate
+
+QuestionID: 1999-W23-5-6
+Question: Where did Premier Mike Harris address cheering supporters?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W23-5-8
+Question: Who hounded Mike Harris at every appearance?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W23-5-10
+Question: What are returning officers?
+Class: DES.definition
+Difficulty: easy
+
+QuestionID: 1999-W24-3-1
+Question: Why will this year's sealift to northern Canada start early?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W24-3-2
+Question: Why can't all supplies just be flown to northern Canada?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W24-3-3
+Question: How much can a can of pop cost in northern Canada?
+Class: NUM.money
+Difficulty: Easy
+
+QuestionID: 1999-W24-3-4
+Question: What does a litre of milk cost in northern Canada?
+Class: NUM.money
+Difficulty: Easy
+
+QuestionID: 1999-W24-3-5
+Question: When did Colin Crosbie become involved in shipping in the Arctic?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W24-3-6
+Question: Where is Iqaluit?
+Class: LOC.other
+Difficulty: Moderate
+
+QuestionID: 1999-W24-3-7
+Question: Who is forecasting smooth sailing in much of James Bay, Hudson Bay and Hudson Strait by the first week of July?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W24-5-1
+Question: When will Judge Arbour start her new job on Canada's Supreme Court?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W24-5-2
+Question: Who is Judge Arbour replacing in her new job?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W24-5-3
+Question: Before getting her new position, what was Judge Arbour's job?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W24-5-4
+Question: Where did Judge Arbour get her law degree?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W24-5-5
+Question: Who says Louise Arbour is "a down-to-earth individual"?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W24-5-7
+Question: What was the president of Yugoslavia indicted for?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W24-5-8
+Question: Why was the announcement about Judge Arbour not made until NATO and Yugoslavia signed an agreement?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W25-1-1
+Question: When did 14,000 NATO troops enter the southern Yugoslavian province of Kosovo?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W25-1-2
+Question: Who is Slobodan Milosevic?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W25-1-3
+Question: Why are the NATO troops in Kosovo?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W25-1-4
+Question: As the NATO troops enter Kosovo, what do many of the residents of Kosovo feel they must do?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W25-1-9
+Question: According to NATO spokesman Jamie Shea, how is troop deployment going?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W25-1-10
+Question: When do all Serb forces have to be withdrawn from Kosovo?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W25-5-1
+Question: When was the last time a Canadian was executed in the United States?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W25-5-2
+Question: Of which province in Canada was Stanley Faulder a native?
+Class: LOC.other
+Difficulty: moderate
+
+QuestionID: 1999-W25-5-3
+Question: What would a stay of execution have allowed?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W25-5-4
+Question: How was Faulder killed?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W25-5-5
+Question: What has Charlene Gingera been working with the Faulder family to do since 1997
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W25-5-7
+Question: Why did Texas Governor George W. Bush refuse to grant a stay of execution for Faulder?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W25-5-8
+Question: Which member of the Canadian Parliament said that Texas officials should ignore the argument that Faulder's rights were violated when he wasn't told he could contact Canadian consular officials when he was charged with murder?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W25-5-9
+Question: How was Faulder on the day of his execution, according to Charlene Gingera?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W25-5-10
+Question: In the last few days before the execution, what were Faulder's relatives hoping for?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W26-5-1
+Question: What is a "resident"?
+Class: DES.definition
+Difficulty: Easy
+
+QuestionID: 1999-W26-5-3
+Question: Where is Mt. Sinai hospital?
+Class: LOC.city
+Difficulty: Moderate
+
+QuestionID: 1999-W26-5-4
+Question: How does a doctor usually learn how to perform operations?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W26-5-5
+Question: What do doctors at Mt. Sinai hospital learn on?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W26-5-6
+Question: In the future, what might doctors use to perfect their techniques?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W26-5-7
+Question: Why are latex intestines a good teaching tool?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W27-2-1
+Question: Where in the Canadian Arctic are the 50 beluga whales trapped?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W27-2-2
+Question: Why have the whales become trapped?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W27-2-3
+Question: Through what are the whales breathing?
+Class: ENT.other
+Difficulty: moderate
+
+QuestionID: 1999-W27-2-4
+Question: Who is trying to save the whales?
+Class: HUM.group
+Difficulty: moderate
+
+QuestionID: 1999-W27-2-5
+Question: Even in the best of conditions, how long can beluga whales stay under water?
+Class: NUM.period
+Difficulty: moderate
+
+QuestionID: 1999-W27-2-6
+Question: How are the bears killing the whales?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W27-5-1
+Question: What is Quebec Premier Lucien Bouchard's special legislation intended to do?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W27-5-2
+Question: Under Bouchard's legislation, what could be imposed on the leaders of the nurses' union if they do not call off the strike immediately?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W27-5-3
+Question: Where are nurses demonstrating?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W27-5-4
+Question: Who is Michele Boisclair?
+Class: HUM.description
+Difficulty: easy
+
+QuestionID: 1999-W27-5-5
+Question: Why is Premier Bouchard reluctant to give the nurses more money?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W27-5-6
+Question: What are many drivers doing to show their support for the nurses on strike?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 1999-W27-5-8
+Question: Who else has threatened to strike?
+Class: HUM.group
+Difficulty: easy
+
+QuestionID: 1999-W27-5-9
+Question: When will the hospital pharmacists leave their jobs if the situation does not improve?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W27-5-10
+Question: How will some Quebec doctors respond unless the Premier comes up with more money for health care
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W28-5-1
+Question: When did American geologists discover dinosaurs bones in the Antarctic?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W28-5-3
+Question: Who is the plesiosaur supposed to resemble?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W28-5-4
+Question: How big were the mosasaur's teeth?
+Class: NUM.distance
+Difficulty: Easy
+
+QuestionID: 1999-W28-5-5
+Question: When did mosasaurs probably arrive in Antarctica?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W28-5-6
+Question: Where are all the places in the world mentioned in this article in which mosasaur bones been have been found?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W28-5-7
+Question: What does this new discovery of dinosaur bones tell us about the Antarctic?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W29-2-1
+Question: How many years in a row has the United Nations ranked Canada the best country in the world to live in?
+Class: NUM.count
+Difficulty: moderate
+
+QuestionID: 1999-W29-2-3
+Question: What is personal income?
+Class: DES.definition
+Difficulty: easy
+
+QuestionID: 1999-W29-2-4
+Question: Where is life expectancy 76 years of age?
+Class: LOC.country
+Difficulty: easy
+
+QuestionID: 1999-W29-2-5
+Question: Who ranked first in healthcare?
+Class: LOC.country
+Difficulty: moderate
+
+QuestionID: 1999-W29-2-6
+Question: In what year did Canadians earn an average of $16,525 US?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 1999-W29-2-7
+Question: Why is life improving for people in developed countries like Canada, according to the UN report?
+Class: DES.reason
+Difficulty: easy
+
+QuestionID: 1999-W29-5-1
+Question: Who traveled across America to help convince the American government that stricter gun control laws are needed?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 1999-W29-5-2
+Question: Where is Columbine High School?
+Class: LOC.city
+Difficulty: easy
+
+QuestionID: 1999-W29-5-4
+Question: How did the two teenage gunmen at Columbine High School die?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W29-5-5
+Question: When does Bill Clinton want to have new gun laws passed?
+Class: NUM.date
+Difficulty: moderate
+
+QuestionID: 1999-W29-5-6
+Question: How does President Clinton hope to put an end to school shootings?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W29-5-7
+Question: Why do some members of the government oppose gun control?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W29-5-8
+Question: Why do some members of the public oppose gun control?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 1999-W30-1-1
+Question: Where did John Jr's plane crash?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 1999-W30-1-2
+Question: What does it mean when a "search and rescue" mission becomes a "search and recovery" mission?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W30-1-3
+Question: Why does the U.S. Coast Guard want to find the plane's crash site?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W30-1-4
+Question: Who was John F. Kennedy Jr's father?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W30-1-5
+Question: How did John Jr's father die?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W30-1-6
+Question: When did John Jr's father die?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 1999-W30-1-7
+Question: How many Kennedys have been involved in U.S. politics?
+Class: NUM.count
+Difficulty: Easy
+
+QuestionID: 1999-W30-2-1
+Question: Why is B.C. Premier Glen Clark unpopular?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W30-2-3
+Question: How should Clark handle his unpopularity, according to political analysts?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W30-2-4
+Question: Who wrote Glen Clark and specifically asked him to quit his job?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 1999-W30-2-6
+Question: What party is Glen Clark the leader of in B.C.?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-1
+Question: Who is at risk of suffering from shellfish asthma?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-2
+Question: What type of illness is shellfish asthma?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-3
+Question: Which types of shellfish cause the illness?
+Class: ENT.other
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-4
+Question: Why did the government place limits on how many fish can be caught?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-5
+Question: Why is it difficult to find a job in Newfoundland's fishing industry?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-6
+Question: Where have important jobs been created that help replace the ones that were lost?
+Class: LOC.other
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-7
+Question: Why are many workers are trying to live with their symptoms?
+Class: DES.reason
+Difficulty: Easy
+
+QuestionID: 1999-W30-3-8
+Question: How does the union representing plant workers feel about shellfish asthma?
+Class: DES.description
+Difficulty: Moderate
+
+QuestionID: 1999-W30-5-1
+Question: Where was a mummified wooly mammoth found?
+Class: LOC.country
+Difficulty: Easy
+
+QuestionID: 1999-W30-5-2
+Question: Who is going to dig up the dead wooly mammoth?
+Class: HUM.individual
+Difficulty: Easy
+
+QuestionID: 1999-W30-5-3
+Question: How do scientists hope to create an exact duplicate of the mammoth?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 1999-W30-5-4
+Question: Why is it important that the the colour of the mammoth's hair and the smell of the skin are still present?
+Class: DES.reason
+Difficulty: Moderate
+
+QuestionID: 1999-W30-5-5
+Question: When did the wooly mammoth live?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 1999-W30-5-7
+Question: What modern animals do wooly mammoths look most like?
+Class: ENT.other
+Difficulty: Easy
+
+QuestionID: 1999-W31-2-1
+Question: What is the name of the Labrador Inuit homeland?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W31-2-3
+Question: How much land would the agreement give the Labrador Inuit?
+Class: NUM.count
+Difficulty: moderate
+
+QuestionID: 1999-W31-2-4
+Question: What are native claims?
+Class: DES.definition
+Difficulty: moderate
+
+QuestionID: 1999-W31-2-5
+Question: Where in Canada do the Labrador Inuit claim to own land?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 1999-W31-2-8
+Question: How did the president of the Labrador Inuit Association describe the deal?
+Class: DES.description
+Difficulty: moderate
+
+QuestionID: 1999-W32-3-1
+Question: What birthday is the Queen Mum celebrating?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W32-3-3
+Question: Why did Adolf Hitler call the Queen Mum the most dangerous woman in Europe?
+Class: DES.reason
+Difficulty: easy
+
+QuestionID: 1999-W32-3-4
+Question: What injury did the Queen Mum suffer last winter
+Class: ENT.other
+Difficulty: moderate
+
+QuestionID: 1999-W32-3-5
+Question: At whose wedding the Queen Mum do the twist?
+Class: HUM.individual
+Difficulty: moderate
+
+QuestionID: 1999-W32-3-6
+Question: How many official homes does the Queen Mother have?
+Class: NUM.count
+Difficulty: easy
+
+QuestionID: 1999-W32-3-7
+Question: Why does the Queen Mum face less media pressure than other members of the royal family?
+Class: DES.reason
+Difficulty: easy
+
+QuestionID: 1999-W32-3-8
+Question: When did the Queen Mother last travel overseas?
+Class: NUM.date
+Difficulty: easy
+
+QuestionID: 2000-W03-4-1
+Question: Who is Canada's Minister of Health?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 2000-W03-4-2
+Question: Where does the government want to put pictures of diseased lungs?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 2000-W03-4-4
+Question: When does Allen Rock want the new cigarette packages in Canadian stores?
+Class: NUM.date
+Difficulty: Easy
+
+QuestionID: 2000-W03-4-5
+Question: Who is Rob Parker a spokesman for?
+Class: HUM.group
+Difficulty: Moderate
+
+QuestionID: 2000-W03-4-6
+Question: How much would it cost to change the cigarette packaging, according to The Canadian Tobacco Manufacturers Association?
+Class: NUM.money
+Difficulty: Easy
+
+QuestionID: 2000-W03-4-7
+Question: What do anti-smoking organizations think about the cigarette packaging plan?
+Class: DES.description
+Difficulty: Easy
+
+QuestionID: 2000-W03-5-1
+Question: What do Jerry's glasses have on them?
+Class: ENT.other
+Difficulty: Easy
+
+QuestionID: 2000-W03-5-2
+Question: When did Jerry get electrodes implanted in his brain?
+Class: NUM.date
+Difficulty: Moderate
+
+QuestionID: 2000-W03-5-3
+Question: How old is Jerry?
+Class: NUM.age
+Difficulty: Easy
+
+QuestionID: 2000-W03-5-4
+Question: Who helped Jerry see?
+Class: HUM.individual
+Difficulty: Moderate
+
+QuestionID: 2000-W03-5-5
+Question: Where does John Girvin work as a professor?
+Class: LOC.other
+Difficulty: Easy
+
+QuestionID: 2000-W06-4-1
+Question: Why could students at Sisler High School be sent home or suspended for kissing?
+Class: DES.reason
+Difficulty: easy
+
+QuestionID: 2000-W06-4-2
+Question: How are students at Sisler expected to treat each other, according to vice-principal Mike Kachmar?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 2000-W06-4-3
+Question: How did Kachmar describe school?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 2000-W06-4-4
+Question: Why did Kachmar say he announced the ban on kissing?
+Class: DES.reason
+Difficulty: moderate
+
+QuestionID: 2000-W06-4-5
+Question: How far back in Western civilization are there references to kissing?
+Class: NUM.date
+Difficulty: moderate
+
+QuestionID: 2000-W06-4-6
+Question: Who said he has never witnessed a problem in Sisler's hallways?
+Class: HUM.individual
+Difficulty: easy
+
+QuestionID: 2000-W06-4-7
+Question: Where was kissing rarely practiced until the 20th century?
+Class: LOC.other
+Difficulty: easy
+
+QuestionID: 2000-W06-4-8
+Question: When were medieval knights kissed?
+Class: DES.description
+Difficulty: easy
+
+QuestionID: 2000-W06-4-9
+Question: What is the "holy kiss" still a part of?
+Class: ENT.other
+Difficulty: moderate
