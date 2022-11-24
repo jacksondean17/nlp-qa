@@ -5,6 +5,14 @@ import numpy as np
 
 
 class QuestionClassifier:
+    """
+    Question classes
+    DES: Description
+    ENT: Entity
+    HUM: Human
+    LOC: Location
+    NUM: Number
+    """
     def __init__(self, training_file=None):
         np.random.seed(0)
 

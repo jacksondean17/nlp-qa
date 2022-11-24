@@ -1,24 +1,28 @@
 from rake_nltk import Rake
 from preprocess import Preprocess as pp
 from QAOptions import QAOptions
+import en_core_web_sm
 
 
 class Story:
-    def __init__(self, story_id, headline, date, text, raw_text, options=None):
+    def __init__(self, story_id, headline, date, text, raw_text, options=None, spacy_model=None):
         if options is None:
             self.options = QAOptions()
         else:
             self.options = options
+
+        self.spacy_model = spacy_model
+        if spacy_model is None:
+            self.spacy_model = en_core_web_sm.load()
 
         self.story_id = story_id
         self.headline = headline
         self.date = date
         self.text = text
         self.sentences = pp.sentence_tokenize(text)
-        self.processed_sentences = [Sentence(s, self.options) for s in self.sentences]
+        self.processed_sentences = [Sentence(s, self.options, self.spacy_model) for s in self.sentences]
         self.questions = []
         self._raw_text = raw_text
-
 
     def __str__(self):
         return f"StoryID: {self.story_id}\n" \
@@ -67,9 +71,15 @@ class Story:
 
 
 class Sentence:
-    def __init__(self, text, options=None):
+    def __init__(self, text, options=None, spacy_model=None):
+        self.spacy_model = spacy_model
+        if spacy_model is None:
+            self.spacy_model = en_core_web_sm.load()
+
         # replace newlines with spaces
         self.text = text.replace('\n', ' ').strip()
+        self.spacy_doc = self.spacy_model(self.text)
+        self.nes = [(X.text, X.label_) for X in self.spacy_doc.ents]
         self.words = pp.word_tokenize(text)
         self.tagged_words = pp.pos_tag(self.words)
         self.processed_words = pp.lemmatize(pp.remove_stopwords(self.words))
@@ -90,11 +100,56 @@ class Sentence:
             sentence_synonyms.update(syns)
 
         score = 0
+        # word matching
         for word in self.processed_words:
             if word in question.processed_question:
                 score += self.options.sentence_scoring_weights['keyword_exact_match']
             elif word in sentence_synonyms:
                 score += self.options.sentence_scoring_weights['keyword_synonym_match']
+
+        # named entity matching
+        # for ne in self.nes:
+        # if ne[0] in question.nes:
+        # score += self.options.sentence_scoring_weights['named_entity_match']
+
+        # match question type with named entities
+        if question.question_type == 'HUM':
+            for ne in self.nes:
+                if (ne[1] == 'PERSON' or
+                        ne[1] == 'ORG' or
+                        ne[1] == 'NORP'):
+                    score += self.options.sentence_scoring_weights['q_type_ner_category']['HUM']
+        elif question.question_type == 'NUM':
+            for ne in self.nes:
+                if (ne[1] == 'DATE' or
+                        ne[1] == 'TIME' or
+                        ne[1] == 'PERCENT' or
+                        ne[1] == 'MONEY' or
+                        ne[1] == 'QUANTITY' or
+                        ne[1] == 'CARDINAL' or
+                        ne[1] == 'ORDINAL'):
+                    score += self.options.sentence_scoring_weights['q_type_ner_category']['NUM']
+        elif question.question_type == 'LOC':
+            for ne in self.nes:
+                if (ne[1] == 'GPE' or
+                        ne[1] == 'FAC' or
+                        ne[1] == 'LOC'):
+                    score += self.options.sentence_scoring_weights['q_type_ner_category']['LOC']
+        elif question.question_type == 'ENT':
+            for ne in self.nes:
+                if (ne[1] == 'ORG' or
+                        ne[1] == 'PERSON' or
+                        ne[1] == 'GPE' or
+                        ne[1] == 'FAC' or
+                        ne[1] == 'LOC'):
+                    score += self.options.sentence_scoring_weights['q_type_ner_category']['ENT']
+        elif question.question_type == 'DES':
+            # no named entity matching for description questions
+            # for ne in self.nes:
+                # if ne[1] == 'ORG':
+                    # score += self.options.sentence_scoring_weights['q_type_ner_category']
+            pass
+
         return score
 
     def __repr__(self):
@@ -118,7 +173,7 @@ class Question:
 
         self.classifier = classifier
         if classifier is not None:
-            self.classification = self.classifier.classify(self.processed_question)
+            self.question_type = self.classifier.classify(self.processed_question)
 
         self.candidate_sentences = []
 
