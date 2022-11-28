@@ -38,6 +38,12 @@ class Story:
 
     def answer_question(self, question):
         question.candidate_sentences = self.get_candidate_sentences(question)
+
+        # return highest scoring sentence without the question words
+        ans = set(question.candidate_sentences[0].words) - set(question.processed_question)
+
+        return ' '.join(ans)
+
         return question.candidate_sentences[0].text
 
     def get_candidate_sentences(self, question):
