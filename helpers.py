@@ -38,12 +38,29 @@ class Story:
     def answer_question(self, question):
         question.candidate_sentences = self.get_candidate_sentences(question)
 
-        # return highest scoring sentence without the question words
+       # '''
+        if question.question_type == 'HUM.individual':
+            ans = self.extract_answer(question, question.candidate_sentences)
+        else:
+            # return highest scoring sentence without the question words
+            ans = set(question.candidate_sentences[0].words) - set(question.processed_question)
+        '''
         ans = set(question.candidate_sentences[0].words) - set(question.processed_question)
+        '''
 
         return ' '.join(ans)
 
+
+
         return question.candidate_sentences[0].text
+
+    def extract_answer(self, question, sentences):
+        if question.question_type == 'HUM.individual':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'PERSON' and ne[0].lower() not in question.processed_question:
+                        return [ne[0]]
+        return sentences[0].words
 
     def get_candidate_sentences(self, question):
         sentence_scores = {}

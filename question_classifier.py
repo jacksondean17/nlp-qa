@@ -45,7 +45,7 @@ class QuestionClassifier:
         Y = self.label_encoder.fit_transform(labels)
 
         # vectorize the questions
-        self.vectorizer = sk.feature_extraction.text.TfidfVectorizer(max_features=5000)
+        self.vectorizer = sk.feature_extraction.text.TfidfVectorizer(ngram_range=(1, 2))
         X = self.vectorizer.fit_transform([" ".join(q) for q in processed_questions])
 
         # split into training and test sets
