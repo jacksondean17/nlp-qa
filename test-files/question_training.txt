@@ -53,7 +53,7 @@ Difficulty: Moderate
 
 QuestionID: 1999-W03-5-6
 Question: How many games did the Edmonton Grads win?
-Class: NUM.quantity
+Class: NUM.count
 Difficulty: Easy
 
 QuestionID: 1999-W03-5-7
@@ -1198,7 +1198,7 @@ Difficulty: Moderate
 
 QuestionID: 1999-W16-5-3
 Question: How large is the Fraser River watershed?
-Class: NUM.size
+Class: NUM.distance
 Difficulty: Easy
 
 QuestionID: 1999-W16-5-5
@@ -1448,7 +1448,7 @@ Difficulty: Moderate
 
 QuestionID: 1999-W18-5-10
 Question: What is the name of the UN organization responsible for refugees?
-Class: ENT.organization
+Class: HUM.group
 Difficulty: Moderate
 
 QuestionID: 1999-W19-1-1

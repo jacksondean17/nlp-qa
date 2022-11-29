@@ -3,15 +3,22 @@ from qa_evaluator import QAEvaluator
 from helpers import Question, Story
 from QAOptions import QAOptions
 from question_classifier import QuestionClassifier
+import en_core_web_sm
+import spacy
+
 
 
 class QA:
-    def __init__(self, input_file, options=QAOptions()):
+    def __init__(self, input_file, options=QAOptions(), classifier_pkl=None):
         self.input_file = input_file
         self.input_dir = None
         self.story_ids = []
         self.stories = {}
-        self.question_classifier = QuestionClassifier('./test-files/question_training.txt')
+        if classifier_pkl:
+            self.question_classifier = QuestionClassifier.load(classifier_pkl)
+        else:
+            self.question_classifier = QuestionClassifier('./test-files/question_training.txt')
+
         self.parse_input_file()
         self.parse_stories()
         self.parse_questions()
@@ -24,9 +31,12 @@ class QA:
                 self.story_ids.append(line.strip())
 
     def parse_stories(self):
+        # only load the spacy model once
+        spacy_model = spacy.load("en_core_web_sm")
+        # spacy_model = en_core_web_sm.load()
         for story_id in self.story_ids:
             with open(self.input_dir + '/' + story_id + '.story', 'r') as story_file:
-                self.stories[story_id] = Story.parse(story_file.read())
+                self.stories[story_id] = Story.parse(story_file.read(), sp_model=spacy_model)
 
         pass
 
@@ -66,7 +76,12 @@ if __name__ == '__main__':
     if len(sys.argv) > 3:
         answer_file = sys.argv[3]
 
-    QA = QA(input_file)
+    if len(sys.argv) > 4:
+        pkl_file = sys.argv[4]
+        QA = QA(input_file, classifier_pkl=pkl_file)
+    else:
+        QA = QA(input_file)
+
     QA.answer_questions()
     # save to file if specified, otherwise print to stdout
     if output_file:

@@ -36,7 +36,11 @@ class QuestionClassifier:
 
         # encode the labels
         # only doing coarse-grained classification for now
-        labels = [l[0] for q, l in questions]
+        # labels = [l[0] for q, l in questions]
+
+        # trying fine-grained classification
+        labels = ['.'.join(l) for q, l in questions]
+
         self.label_encoder = sk.preprocessing.LabelEncoder()
         Y = self.label_encoder.fit_transform(labels)
 
@@ -53,7 +57,19 @@ class QuestionClassifier:
 
     def evaluate(self):
         Y_pred = self.classifier.predict(self.X_test)
-        print(sk.metrics.classification_report(self.Y_test, Y_pred, target_names=self.label_encoder.classes_))
+        print(sk.metrics.classification_report(self.Y_test, Y_pred, target_names=self.label_encoder.classes_, labels=self.label_encoder.transform(self.label_encoder.classes_)))
+
+    def save(self, filename):
+        import pickle
+        with open(filename, 'wb') as f:
+            pickle.dump(self, f)
+
+    @staticmethod
+    def load(filename):
+        print('loading classifier')
+        import pickle
+        with open(filename, 'rb') as f:
+            return pickle.load(f)
 
     @staticmethod
     def preprocess_questions(questions):
@@ -89,6 +105,8 @@ class QuestionClassifier:
 if __name__ == "__main__":
     qc = QuestionClassifier("./test-files/question_training.txt")
     qc.evaluate()
+
+    qc.save("./test-files/question_classifier.pkl")
 
     # print the results
 #    print(sk.metrics.classification_report(Y_test, Y_pred, target_names=label_encoder.classes_))
