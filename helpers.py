@@ -6,10 +6,9 @@ import en_core_web_sm
 
 class Story:
     def __init__(self, story_id, headline, date, text, raw_text, options=None, spacy_model=None):
-        if options is None:
+        self.options = options
+        if self.options is None:
             self.options = QAOptions()
-        else:
-            self.options = options
 
         self.spacy_model = spacy_model
         if spacy_model is None:
@@ -61,7 +60,7 @@ class Story:
         return s
 
     @staticmethod
-    def parse(text, sp_model=None):
+    def parse(text, sp_model=None, options=None):
         """
         Parse the original text from the *.story file into a Story object
         :param text: The text from the *.story file
@@ -74,7 +73,7 @@ class Story:
         story_id = lines[2].split(':')[-1].strip()
         text = '\n'.join(lines[6:])
 
-        return Story(story_id, headline, date, text, text, spacy_model=sp_model)
+        return Story(story_id, headline, date, text, text, spacy_model=sp_model, options=options)
 
 
 class Sentence:
@@ -119,100 +118,105 @@ class Sentence:
         # if ne[0] in question.nes:
         # score += self.options.sentence_scoring_weights['named_entity_match']
 
-        # fine-grained question type matching
-        if question.question_type == 'DES.definition':
-            for ne in self.nes:
+        if True:
+            # fine-grained question type matching
+            if question.question_type == 'DES.definition':
+                for ne in self.nes:
 
-                pass
-        elif question.question_type == 'DES.description':
-            for ne in self.nes:
-                pass
-        elif question.question_type == 'DES.reason':
-            for ne in self.nes:
-                pass
-        elif question.question_type == 'ENT.animal':
-            for ne in self.nes:
-                pass
-        elif question.question_type == 'ENT.event':
-            for ne in self.nes:
-                pass
-        elif question.question_type == 'ENT.other':
-            for ne in self.nes:
-                pass
-        elif question.question_type == 'ENT.term':
-            for ne in self.nes:
-                pass
-        elif question.question_type == 'HUM.description':
-            for ne in self.nes:
-                if ne[1] == 'PERSON':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['HUM.description']
-                pass
-        elif question.question_type == 'HUM.group':
-            for ne in self.nes:
-                if (ne[1] == 'ORG' or
-                        ne[1] == 'NORP' or
-                        ne[1] == 'FAC'):
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['HUM.group']
-                pass
-        elif question.question_type == 'HUM.individual':
-            for ne in self.nes:
-                if ne[1] == 'PERSON':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['HUM.individual']
-                pass
-        elif question.question_type == 'LOC.city':
-            for ne in self.nes:
-                if ne[1] == 'GPE':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['LOC.city']
-                pass
-        elif question.question_type == 'LOC.country':
-            for ne in self.nes:
-                if ne[1] == 'GPE':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['LOC.country']
-                pass
-        elif question.question_type == 'LOC.other':
-            for ne in self.nes:
-                if ne[1] == 'LOC':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['LOC.other']
-                pass
-        elif question.question_type == 'NUM.age':
-            for ne in self.nes:
-                if ne[1] == 'DATE':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.age']
-                pass
-        elif question.question_type == 'NUM.count':
-            for ne in self.nes:
-                if ne[1] == 'CARDINAL':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.count']
-                pass
-        elif question.question_type == 'NUM.date':
-            for ne in self.nes:
-                if ne[1] == 'DATE':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.date']
-                pass
-        elif question.question_type == 'NUM.distance':
-            for ne in self.nes:
-                if ne[1] == 'QUANTITY':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.distance']
-                pass
-        elif question.question_type == 'NUM.money':
-            for ne in self.nes:
-                if ne[1] == 'MONEY':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.money']
-                pass
-        elif question.question_type == 'NUM.other':
-            for ne in self.nes:
-                if (ne[1] == 'ORDINAL' or
-                        ne[1] == 'TIME' or
-                        ne[1] == 'PERCENT' or
-                        ne[1] == 'QUANTITY' or
-                        ne[1] == 'CARDINAL'):
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.other']
-                pass
-        elif question.question_type == 'NUM.period':
-            for ne in self.nes:
-                if ne[1] == 'DATE':
-                    score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.period']
-                pass
+                    pass
+            elif question.question_type == 'DES.description':
+                for ne in self.nes:
+                    pass
+            elif question.question_type == 'DES.reason':
+                for ne in self.nes:
+                    pass
+            elif question.question_type == 'ENT.animal':
+                for ne in self.nes:
+                    pass
+            elif question.question_type == 'ENT.event':
+                for ne in self.nes:
+                    if ne[1] == 'EVENT':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['ENT.event']
+                    pass
+            elif question.question_type == 'ENT.other':
+                for ne in self.nes:
+                    pass
+            elif question.question_type == 'ENT.term':
+                for ne in self.nes:
+                    pass
+            elif question.question_type == 'HUM.description':
+                for ne in self.nes:
+                    if ne[1] == 'PERSON':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['HUM.description']
+                    pass
+            elif question.question_type == 'HUM.group':
+                for ne in self.nes:
+                    if (ne[1] == 'ORG' or
+                            ne[1] == 'NORP' or
+                            ne[1] == 'GPE'):
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['HUM.group']
+                    pass
+            elif question.question_type == 'HUM.individual':
+                for ne in self.nes:
+                    if ne[1] == 'PERSON':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['HUM.individual']
+                    pass
+            elif question.question_type == 'LOC.city':
+                for ne in self.nes:
+                    if ne[1] == 'GPE':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['LOC.city']
+                    pass
+            elif question.question_type == 'LOC.country':
+                for ne in self.nes:
+                    if ne[1] == 'GPE':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['LOC.country']
+                    pass
+            elif question.question_type == 'LOC.other':
+                for ne in self.nes:
+                    if ne[1] == 'LOC':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['LOC.other']
+                    pass
+            elif question.question_type == 'NUM.age':
+                for ne in self.nes:
+                    if ne[1] == 'DATE':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.age']
+                    pass
+            elif question.question_type == 'NUM.count':
+                for ne in self.nes:
+                    if ne[1] == 'CARDINAL':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.count']
+                    pass
+            elif question.question_type == 'NUM.date':
+                for ne in self.nes:
+                    if (ne[1] == 'DATE' or
+                            ne[1] == 'TIME'):
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.date']
+                    pass
+            elif question.question_type == 'NUM.distance':
+                for ne in self.nes:
+                    if ne[1] == 'QUANTITY':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.distance']
+                    pass
+            elif question.question_type == 'NUM.money':
+                for ne in self.nes:
+                    if ne[1] == 'MONEY':
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.money']
+                    pass
+            elif question.question_type == 'NUM.other':
+                for ne in self.nes:
+                    if (ne[1] == 'ORDINAL' or
+                            ne[1] == 'TIME' or
+                            ne[1] == 'PERCENT' or
+                            ne[1] == 'QUANTITY' or
+                            ne[1] == 'CARDINAL'):
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.other']
+                    pass
+            elif question.question_type == 'NUM.period':
+                for ne in self.nes:
+                    if (ne[1] == 'DATE' or
+                            ne[1] == 'TIME'):
+                        score += self.options.sentence_scoring_weights['q_type_ner_category_fine']['NUM.period']
+                    pass
 
 
         # match question type with named entities

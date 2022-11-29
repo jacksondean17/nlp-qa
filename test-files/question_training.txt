@@ -1518,7 +1518,7 @@ Difficulty: moderate
 
 QuestionID: 1999-W19-2-6
 Question: What is the wind speed range of an F-4 tornado?
-Class: NUM.other
+Class: NUM.distance
 Difficulty: easy
 
 QuestionID: 1999-W19-2-7
@@ -1878,7 +1878,7 @@ Difficulty: moderate
 
 QuestionID: 1999-W23-1-7
 Question: What is the noise level in an office?
-Class: NUM.other
+Class: NUM.distance
 Difficulty: easy
 
 QuestionID: 1999-W23-1-9

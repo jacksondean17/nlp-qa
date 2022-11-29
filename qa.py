@@ -14,6 +14,7 @@ class QA:
         self.input_dir = None
         self.story_ids = []
         self.stories = {}
+        self.options = options
         if classifier_pkl:
             self.question_classifier = QuestionClassifier.load(classifier_pkl)
         else:
@@ -22,7 +23,6 @@ class QA:
         self.parse_input_file()
         self.parse_stories()
         self.parse_questions()
-        self.options = options
 
     def parse_input_file(self):
         with open(self.input_file, 'r') as story_list:
@@ -36,7 +36,7 @@ class QA:
         # spacy_model = en_core_web_sm.load()
         for story_id in self.story_ids:
             with open(self.input_dir + '/' + story_id + '.story', 'r') as story_file:
-                self.stories[story_id] = Story.parse(story_file.read(), sp_model=spacy_model)
+                self.stories[story_id] = Story.parse(story_file.read(), sp_model=spacy_model, options=self.options)
 
         pass
 
