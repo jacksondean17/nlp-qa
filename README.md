@@ -30,11 +30,21 @@ to those given in the answer file and print the accuracy of the system as determ
 
 ## External Libraries
 * [NLTK](http://www.nltk.org/) - Natural Language Toolkit
-    * Used for tokenization, POS tagging, NER
+    * Tokenization
+    * POS tagging
+* [spaCy](https://spacy.io/) - Industrial-Strength Natural Language Processing
+    * NER
+    * Used model `en_core_web_sm`
+* [scikit-learn](http://scikit-learn.org/stable/) - Machine Learning in Python
+    * TF-IDF vectorization
+    * SVM classifier
 * [rake-nltk](https://pypi.org/project/rake-nltk/) - Rapid Automatic Keyword Extraction
-    * Used for keyword extraction
+    * *Unused in final version but still present in codebase*
+    * Keyword extraction
 * [numpy](https://numpy.org/) - Numerical Python
     * Required by other libraries
+* [scipy](https://www.scipy.org/) - Scientific Python
+    * Parameter optimization
 
 ### NLTK Data
 The following nltk datasets are required to be downloaded before running.
@@ -43,13 +53,17 @@ The following nltk datasets are required to be downloaded before running.
 * wordnet
 * omw-1.4
 * averaged_perceptron_tagger
-
-(not sure if I need this yet)
-* maxent_ne_chunker
 * words
 
+### spaCy Data
+The following spaCy model is required to be downloaded before running.
+* en_core_web_sm
+
 ## Time Estimate
-The QA tool takes approximately **6.25s** to process a single story.
+The QA tool takes approximately **6.25s** to process a single story. However, some of this time is spent on initial 
+setup which is only required once, not for every story.
+
+This startup time includes training a question classifier using the training data in test-files/question_training.txt.
 
 ## Known Problems
 None
