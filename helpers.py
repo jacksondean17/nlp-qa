@@ -39,7 +39,10 @@ class Story:
         question.candidate_sentences = self.get_candidate_sentences(question)
 
        # '''
-        if question.question_type == 'HUM.individual':
+        if (question.question_type == 'HUM.individual' or
+                # question.question_type == 'HUM.group' or
+                question.question_type[0][:3] == 'LOC' or
+                question.question_type[0][:3] == 'NUM'):
             ans = self.extract_answer(question, question.candidate_sentences)
         else:
             # return highest scoring sentence without the question words
@@ -60,6 +63,56 @@ class Story:
                 for ne in sentences[i].nes:
                     if ne[1] == 'PERSON' and ne[0].lower() not in question.processed_question:
                         return [ne[0]]
+
+#        elif question.question_type == 'HUM.group':
+#            for i in range(self.options.num_candidate_sentences):
+#                for ne in sentences[i].nes:
+#                    if ne[1] == 'ORG' or ne[1] == 'NORP' or ne[1] == 'GPE' and ne[0].lower() not in question.processed_question:
+#                        return [ne[0]]
+
+
+        elif question.question_type == 'LOC.city':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'GPE' and ne[0].lower() not in question.processed_question:
+                        return [ne[0]]
+        elif question.question_type == 'LOC.country':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'GPE' and ne[0].lower() not in question.processed_question:
+                        return [ne[0]]
+        elif question.question_type == 'LOC.other':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'LOC' and ne[0].lower() not in question.processed_question:
+                        return [ne[0]]
+
+        elif question.question_type == 'NUM.age':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'DATE':
+                        return [ne[0]]
+        elif question.question_type == 'NUM.date':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'DATE' or ne[1] == 'TIME':
+                        return [ne[0]]
+        elif question.question_type == 'NUM.money':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'MONEY':
+                        return [ne[0]]
+        elif question.question_type == 'NUM.distance':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'QUANTITY':
+                        return [ne[0]]
+        elif question.question_type == 'NUM.period':
+            for i in range(self.options.num_candidate_sentences):
+                for ne in sentences[i].nes:
+                    if ne[1] == 'DATE' or ne[1] == 'TIME':
+                        return [ne[0]]
+
         return sentences[0].words
 
     def get_candidate_sentences(self, question):
